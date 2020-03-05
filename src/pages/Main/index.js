@@ -16,7 +16,6 @@ export default class Main extends Component {
     if(repositories){
       this.setState({ repositories: JSON.parse(repositories) });
     }
-
   }
 
   componentDidUpdate(_, prevState){
@@ -25,7 +24,6 @@ export default class Main extends Component {
     if(prevState.repositories !== repositories){
       localStorage.setItem('repositories', JSON.stringify(repositories));
     }
-
   }
 
 
