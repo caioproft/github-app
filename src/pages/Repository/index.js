@@ -1,7 +1,7 @@
 import React from 'react';
 
-export default function Repository(){
+export default function Repository({ match }){
   return(
-    <h1>Repositórios</h1>
+  <h1>Repositórios: {decodeURIComponent(match.params.repository)} </h1>
   )
 }
